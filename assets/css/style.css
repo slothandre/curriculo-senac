@@ -8,7 +8,7 @@ body {
 }
 header {
     display: flex;
-    background-color: #09A562;
+    background-color: #098ea5;
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
@@ -70,7 +70,7 @@ img[alt^="foto"] {
     gap: 10px;
 }
 #buttons-section a {
-    background-color: #09A562;
+    background-color: #098ea5;
     width: 150px;
     text-decoration: none;
     color: #FFF;
@@ -79,5 +79,5 @@ img[alt^="foto"] {
     border-radius: 5px;
 }
 #buttons-section a:hover {
-    background-color: #0a9156;
+    background-color: #077588;
 }
