@@ -4,7 +4,7 @@
 }
 body {
     margin: 0;
-    background-color: #EEE;
+    background-color: #fff3bc;
 }
 header {
     display: flex;
@@ -49,12 +49,12 @@ header {
     filter: brightness(90%);
 }
 img[alt^="foto"] {
-    max-height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%);
 }
 #about-me {
     margin: auto;
-    width: 90%;
+    margin-bottom: 50px;
+    width: 90vw;
     background-color: #FFF;
     box-shadow: 0px 1px 4px #777;
 }
@@ -80,4 +80,29 @@ img[alt^="foto"] {
 }
 #buttons-section a:hover {
     background-color: #077588;
+}
+#habilidades {
+    margin: auto;
+    width: 90vw;
+}
+#habilidades h3 {
+    text-align: center;
+}
+#container-hab {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.hab-itens {
+    width: 49%;
+    background-color: #098ea5;
+    color: #FFF;
+}
+.hab-itens a {
+    text-decoration: none;
+    color: #CCC;
+}
+.hab-itens a:hover {
+    color: #AAA;
 }
