@@ -106,3 +106,12 @@ img[alt^="foto"] {
 .hab-itens a:hover {
     color: #AAA;
 }
+@media screen and (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+    }
+    img[alt^="foto"] {
+        clip-path: none;
+        max-width: 100%;
+    }
+}
