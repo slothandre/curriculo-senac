@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     height: 250px;
     box-shadow: 0px 1px 4px #777;
-    width: 90%;
+    width: 90vw;
 }
 #text-apresentation {
     color: #FFF;
@@ -40,16 +40,19 @@ header {
 #home-address {
     list-style-image: url(../icons/maps-and-flags.png);
 }
-#icons-header {
+#icons-header,
+#footer-icons {
     margin-top: 20px;
     display: flex;
     gap: 10px;
 }
-#icons-header a:hover {
+#icons-header a:hover,
+#footer-icons a:hover {
     filter: brightness(90%);
 }
 img[alt^="foto"] {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 23% 100%);
+    max-height: 100%;
 }
 #about-me {
     margin: auto;
@@ -98,20 +101,53 @@ img[alt^="foto"] {
     width: 49%;
     background-color: #098ea5;
     color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px #777;
 }
-.hab-itens a {
+.hab-itens a,
+#footer a {
     text-decoration: none;
     color: #CCC;
 }
-.hab-itens a:hover {
+.hab-itens a:hover,
+#footer a:hover {
     color: #AAA;
+}
+.hab-itens h4,
+.hab-itens p,
+#footer p {
+    padding: 5px 20px;
+}
+.hab-itens h4 {
+    text-align: center;
+}
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 90vw;
+    background-color: #098ea5;
+    margin: auto;
+    margin-top: 50px;
+    color: #FFF;
+}
+#footer-icons {
+    padding-right: 20px;
 }
 @media screen and (max-width: 700px) {
     header {
-        flex-wrap: wrap;
+        flex-direction: column;
+        height: 500px;
     }
     img[alt^="foto"] {
         clip-path: none;
         max-width: 100%;
+    }
+    .container-hab {
+        flex-direction: column;
+    }
+    .hab-itens {
+        width: 100%;
     }
 }
